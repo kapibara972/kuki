@@ -1,0 +1,5 @@
+cd /var/www/source/
+
+git add . >> /var/log/git_pus_logid.log 2>&1
+git commit -m "$(date)" >> /var/log/git_pus_logid.log 2>&1
+git push -u origin main >> /var/log/git_pus_logid.log 2>&1
